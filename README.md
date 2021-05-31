@@ -2,10 +2,24 @@
 
 Codes for the paper "Efficient Multiple Biomedical Events Extraction Via Reinforcement Learning", and you can find our paper at [here](https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btab024/6119341).
 
+### Requirements
+- Python 3.8.5
+- Pytorch 1.6.0
+
+### Data
+- [GE13](http://bionlp.dbcls.jp/projects/bionlp-st-ge-2013/wiki)
+  BioNLP Shared Tasks: Genia event extraction (GE) task, 2013. Originally released by the paper "The Genia Event Extraction Shared Task, 2013 Edition - Overview".
+- [MLEE](http://nactem.ac.uk/MLEE/)
+  Multi-Level Event Extraction (MLEE) corpus is originally released by the paper "Event extraction across multiple levels of biological organization".
+
+The datasets that we used for event extraction are provided in corresponding subdirectories under BioEE-RL/data.
+
+### Run
+After preprocessing the datasets as the format in `Data/format.json`, the main entrance is in `main.py`.
 
 ### Cite
-Cite this paper as:
-```
+Please cite this paper as:
+```bibtex
 @article{10.1093/bioinformatics/btab024,
     author = {Zhao, Weizhong and Zhao, Yao and Jiang, Xingpeng and He, Tingting and Liu, Fan and Li, Ning},
     title = "{Efficient multiple biomedical events extraction via reinforcement learning}",
@@ -20,15 +34,3 @@ Cite this paper as:
     eprint = {https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btab024/36163103/btab024.pdf},
 }
 ```
-
-### Data
-- [GE13](http://bionlp.dbcls.jp/projects/bionlp-st-ge-2013/wiki)
-  BioNLP Shared Tasks: Genia event extraction (GE) task, 2013. Originally released by the paper "The Genia Event Extraction Shared Task, 2013 Edition - Overview".
-- [MLEE](http://nactem.ac.uk/MLEE/)
-  Multi-Level Event Extraction (MLEE) corpus is originally released by the paper "Event extraction across multiple levels of biological organization".
-
-The datasets that we used for event extraction are provided in corresponding subdirectories under BioEE-RL/data.
-
-### Requirements
-- Python 3.8.5
-- Pytorch 1.6.0
